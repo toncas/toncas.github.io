@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 
-class Main extends React.Component {
+class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>This site is under construction</h1>
-      </div>
+      <MuiThemeProvider>
+        <RaisedButton label="Under Construction" />
+      </MuiThemeProvider>
     )
   }
 }
 
 const app = document.getElementById('app');
-ReactDOM.render(<Main />, app);
+ReactDOM.render(<App />, app);
